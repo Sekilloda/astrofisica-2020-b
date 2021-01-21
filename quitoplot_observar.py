@@ -26,7 +26,7 @@ package.
 """
 
 ##############################################################################
-# Adaptación para observar desde Quito
+# Adaptación para observar desde conocoto
 # Importar librerias a ser usadas numpy, matplotlib y astropy.visualization
 
 import numpy as np
@@ -55,10 +55,10 @@ m33 = SkyCoord.from_name('M33')
 ori=SkyCoord.from_name('zet Ori')
 antares=SkyCoord.from_name('alf Sco')
 ##############################################################################
-#`astropy.coordinates.EarthLocation` define la localización de Quito (lat, long y altitud)
-# fecha y tiempo: Quito, 5 de mayo 2020 a las 20:00 
+#`astropy.coordinates.EarthLocation` define la localización de conocoto (lat, long y altitud)
+# fecha y tiempo: conocoto, 5 de mayo 2020 a las 20:00
 Quito = EarthLocation(lat=0.21*u.deg, lon=-78*u.deg, height=2850*u.m)
-utcoffset = -5*u.hour  # Hora local en Quito (UT-5)
+utcoffset = -5*u.hour  # Hora local en conocoto (UT-5)
 time = Time('2020-5-16 20:00:00') - utcoffset
 
 ##############################################################################
@@ -82,7 +82,7 @@ midnight = Time('2020-5-16 00:00:00') - utcoffset
 delta_midnight = np.linspace(-4, 6, 100)*u.hour
 frame_mayo16night = AltAz(obstime=midnight+delta_midnight,
                           location=Quito)
-#m33altazs_mayo16night = m33.transform_to(frame_mayo16night)
+#m33altazs_mayo16night = m33.transform_to(frame_mayo15noche)
 orialtazs_mayo16night = ori.transform_to(frame_mayo16night)
 antaresaltazs_mayo16night = antares.transform_to(frame_mayo16night)
 ##############################################################################
