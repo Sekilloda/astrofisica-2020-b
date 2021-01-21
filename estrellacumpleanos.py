@@ -7,6 +7,7 @@ from astropy.coordinates import SkyCoord, EarthLocation, AltAz
 from astropy.coordinates import get_sun, get_moon
 
 plt.style.use(astropy_mpl_style)
+plt.rcParams.update({'text.usetex': False, 'font.family':'serif','font.sans-serif':['Helvetica'], 'figure.figsize':(10.6, 7.95), 'figure.dpi':150})
 quantity_support()
 denebola = SkyCoord.from_name('Beta Leonis')
 # `astropy.coordinates.EarthLocation` define la localización de conocoto (lat, long y altitud)
@@ -58,4 +59,5 @@ plt.xticks((np.arange(13) * 2 - 12) * u.hour)
 plt.ylim(0, 90)
 plt.xlabel('Mayo 15 media noche en 0 (UT-5)')
 plt.ylabel('Altitud [grados]')
+plt.title('Altitud y azimut de Denebola')
 plt.savefig('images/estrellacump.png')
