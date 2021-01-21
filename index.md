@@ -45,9 +45,9 @@
   </div>
 
   <nav role="navigation" class="toc">
-    <h2>Contents</h2>
+    <h2>Contenido</h2>
     <ol>
-      <li><a href="#getting-started">Getting Started</a></li>
+      <li><a href="#topicos">Tópicos de Astrofísica Galáctica y Extragaláctica</a></li>
       <li>
         <a href="#class-based-elements">Class-based Elements</a>
         <ol>
@@ -87,25 +87,17 @@
 
   <main>
     <article>
-      <h2 id="getting-started">Getting Started</h2>
+      <h2 id="topicos">Getting Started</h2>
       <ul>
         <li>
-          Add
-          <code class="language-html">&lt;link rel="stylesheet"
-              href="https://latex.now.sh/style.css"&gt;</code>
-          to the <code class="language-html">&lt;head&gt;</code> of your website or install the
-          package using <code>npm install latex.css</code>.
+          Asignatura dictada por el profesor Nicolás Vásquez, en la Escuela Politécnica Nacional.
         </li>
         <li>
-          (optional) Add any classes to elements described in the
-          <a href="#class-based-elements">next section</a>.
+          La versión actual de esta página fue creada con el contenido de la asignatura en el período 2020-B.
         </li>
         <li>
-          (optional) If you need support for
-          <span class="latex">L<span>a</span>T<span>e</span>X</span> math, add
-          the following script to include
-          <a href="https://www.mathjax.org/">MathJax</a>:
-          <pre><code class="language-html">&lt;script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"&gt;&lt;/script&gt;</code></pre>
+          Debido a la pandemia de covid-19, las clases fueron dictadas de forma virtual. Las plataformas usadas para el desarrollo de la case fueron
+            <a href="https://www.microsoft.com/en/microsoft-teams/group-chat-software">Teams</a>
         </li>
         <li>
           (optional) If you need syntax highlighting, add
