@@ -14,6 +14,6 @@ plt.rcParams.update({'font.size': 14})  # tamaño de la fuente
 plt.xlabel("x")
 plt.ylabel("y")
 plt.title('dy/dx = 2x - 3y con y(0)=3')
-plt.plot(xs, ys);
-plt.show ()
+plt.plot(xs, ys)
+plt.show()
 

@@ -8,7 +8,7 @@ yaxis=np.sin(xaxis)*np.cos(xaxis)
 plt.plot(xaxis,yaxis)
 plt.ylabel('sin(x)')
 
-f = open("chuleta.txt", "w")
+f = open("../datos/chuleta.txt", "w")
 for xaxis in np.linspace(0,np.pi*2,100):
 	y=np.sin(xaxis)*np.cos(xaxis)
 	f.write(str(xaxis))

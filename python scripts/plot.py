@@ -22,8 +22,8 @@ def extraer_filter(filename):
     return energia
 
 
-energia_electrones=extraer_filter('Energia_e.dat')
-energia_piones=extraer_filter('Energia_pion.dat')
+energia_electrones=extraer_filter('../datos/Energia_e.dat')
+energia_piones=extraer_filter('../datos/Energia_pion.dat')
 
 
 all_data=np.concatenate((energia_electrones,energia_piones), axis=None)

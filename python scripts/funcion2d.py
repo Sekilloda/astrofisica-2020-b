@@ -10,7 +10,7 @@ plt.title('Funcion')
 plt.ylabel('f(x)')
 plt.xlabel('x')
 
-f = open("chuletita.txt", "w")
+f = open("../datos/chuletita.txt", "w")
 for x in np.arange(0,100,1):
 	v=x*x-3
 	f.write(str(x))
@@ -18,5 +18,5 @@ for x in np.arange(0,100,1):
 	f.write(str(v))
 	f.write('\n')
 
-plt.show ()
+plt.show()
 
