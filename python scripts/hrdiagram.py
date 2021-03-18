@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 plt.rcParams.update(
     {'text.usetex': True, 'font.family': 'serif', 'font.sans-serif': ['Helvetica'], 'figure.figsize': (10.6, 7.95),
      'figure.dpi': 150})
-table = pd.read_excel('datos/ngc3532.ods', engine='odf', header=119, na_values='')
+table = pd.read_excel('../datos/ngc3532.ods', engine='odf', header=119, na_values='')
 table = table.replace(r'^\s*$', np.NaN, regex=True)
 plx = table.loc[2:]["Plx"].to_numpy(dtype=np.float64)
 e_plx = table.loc[2:]["e_Plx"].to_numpy(dtype=np.float64)
@@ -26,4 +26,4 @@ plt.legend(fontsize='xx-large')
 plt.title('Diagrama HR para NGC3532', fontsize='xx-large')
 plt.gca().invert_yaxis()
 plt.grid()
-plt.savefig('images/hrdiagram.png')
+plt.savefig('../daniel_files/images/hrdiagram.png')
