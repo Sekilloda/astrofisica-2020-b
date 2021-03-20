@@ -48,7 +48,7 @@
   </nav>
 
   <main>
-      <iframe src="https://www.wolframcloud.com/obj/0c8e7408-65b5-4062-8b1a-0a44a7b1fe20?_embed=iframe" width="600" height="800"></iframe>
+
     <article>
       <h2 id="topicos">Visión general</h2>
       <ul>
@@ -168,10 +168,124 @@ import astropy</code></pre>
                 Diagrama HR para NGC3532, también conocido como La Fuente de los Deseos.
             </figcaption>
         </figure>
-      <h2 id="galaxias">Galaxias Elítica y Espiral</h2>
+      <h2 id="galaxias">Galaxias Elíptica y Espiral</h2>
+       <p>
+          Las galaxias se pueden clasificar según su forma. Entre las diversas formas de hacer esta clasificación, una de uso común es la secuencia principal de Hubble. Este sistema
+           de clasificación es útil para predecir la cantidad de formación estelar en curso en una galaxia, así como otros parámetros importantes. Las dos clases principales son $S$, para
+           espiral; y $E$, para elíptica. Las galaxias elípticas son jóvenes y tienen una gran cantidad de actividad de formación estelar, por lo que emite la mayor parte de su luz en
+           la banda azul. Las galaxias espirales tienen más edad y menor actividad de formación estelar, por lo que emiten más en la banda roja. Para ilustrar estas diferencias,
+           se presentan imágenes de M89 y M81, galaxias elíptica y espiral correspondientemente, en cada banda y compuesto.
+       </p>
+        <figure>
+            <img src="daniel_files/images/bluem89.png"
+                 loading="lazy" alt="M89B" width="1590" height="1192" />
+            <figcaption>
+                Imagen de M89 en la banda B.
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="daniel_files/images/redm89.png"
+                 loading="lazy" alt="M89B" width="1590" height="1192" />
+            <figcaption>
+                Imagen de M89 en la banda rp.
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="daniel_files/images/greenm89.png"
+                 loading="lazy" alt="M89B" width="1590" height="1192" />
+            <figcaption>
+                Imagen de M89 en la banda V.
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="daniel_files/images/rgbm89.png"
+                 loading="lazy" alt="M89B" width="1590" height="1192" />
+            <figcaption>
+                Imagen de M89 compuesta de las tres bandas anteriores.
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="daniel_files/images/bluem81.png"
+                 loading="lazy" alt="M89B" width="1590" height="1192" />
+            <figcaption>
+                Imagen de M81 en la banda B.
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="daniel_files/images/redm81.png"
+                 loading="lazy" alt="M89B" width="1590" height="1192" />
+            <figcaption>
+                Imagen de M81 en la banda rp.
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="daniel_files/images/greenm81.png"
+                 loading="lazy" alt="M89B" width="1590" height="1192" />
+            <figcaption>
+                Imagen de M81 en la banda V.
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img src="daniel_files/images/rgbm81.png"
+                 loading="lazy" alt="M89B" width="1590" height="1192" />
+            <figcaption>
+                Imagen de M81 compuesta de las tres bandas anteriores.
+            </figcaption>
+        </figure>
+
+
+     <h2 id="stefan">Espectro radiativo de un objeto a velocidades relativistas</h2>
       <p>
-          La formación estelar.
+        El espectro de radiación de la mayor parte de cuerpos celestes se puede aproximar a buen encaje por el de un cuerpo negro. La radiación de cuerpo negro
+          cumple con la ley de Planck, que indica la radiancia espectral de un cuerpo a cierta temperatura. Para cuerpos celestes moviéndose a velocidades relativistas,
+          es necesario introducir correcciones provenientes de Relatividad Especial en el modelo. Las ecuación para radiancia espectral en el régimen no relativista es
+          $$\frac{2hc^2}{\lambda^5}\frac{1}{e^{\frac{hc}{\lambda k_B T}}-1}$$
+          y en el régimen relativista es
+          $$\frac{\left(\frac{2 h c^{2}}{\lambda^{5}}\right)\left(1-V^{2}\right)^{\frac{3}{2}}}{(1-V \cos \theta)^{3}\left\{\exp \left[\left(\frac{h c}{k_{B} \lambda T_{\mathrm{o}}}\right) \frac{(1-V \cos \theta)}{\left(1-V^{2}\right)^{\frac{1}{2}}}\right]-1\right\}}$$
+          donde $\lambda$ es la longitud de onda, $T$ es la temperatura del cuerpo en Kelvin, $k_B$ la constante de Boltzmann, $h$ la constante de Planck, $c$ la velocidad de la luz,
+          $V$ la fracción de la velocidad de la luz a la que se mueve el cuerpo y $\theta$ el ángulo que la posición del cuerpo forma con el observador, respecto a su velocidad.
       </p>
+        <p>
+            A continuación se presenta una simulación interactiva que indica el comportamiento de la radiancia espectral en ambos régimenes. El panel superior corresponde al régimen no relativista,
+            el inferior al régimen relativista. Los controles están etiquetados con las mismas variables que las ecuaciones del modelo, salvo por 'cut', que controla la longitud de onda de corte
+            para la que se calcula la radiancia espectral.
+        </p>
+        <iframe src="https://www.wolframcloud.com/obj/0c8e7408-65b5-4062-8b1a-0a44a7b1fe20?_embed=iframe" width="600" height="800"></iframe>
+        <p>
+            La corrección relativista se emplea en la colorimetría de estrellas de neutrones rutinariamente, como se indica en el siguiente <a href="https://doi.org/10.1051/0004-6361:20011304">artículo.</a>
+        </p>
+
+        <h2 id="muchos datos">Tratamiento de datos</h2>
+        <p>
+            la observación de astros, por medio de cualquier instrumento, genera cantidades gigantescas de datos de todo tipo. Es el trabajo de un astrónomo organizar, limpiar, tratar
+            y dar sentido a estos datos; usarlos para hacer inferencias y poner a prueba leyes físicas. Por lo tanto, es razonable decir que una habilidad imprescindible para hacer astronomía es
+            el tratamiento de datos. Para ilustrar cómo funciona el tratamiento de datos, se exponen las siguientes gráficas, hechas con un dataset de un millón de entradas de un detector
+            de partículas.
+        </p>
+        <figure>
+            <img src="daniel_files/images/part3.png"
+                 loading="lazy" alt="PosicionesPartículas" width="1590" height="1192" />
+            <figcaption>
+                Mapa de calor, dividido en sectores, para eventos de detección en el arreglo de detectores.
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="daniel_files/images/part2.png"
+                 loading="lazy" alt="Histograma" width="1590" height="1192" />
+            <figcaption>
+                Histograma, que indica el número de partículas de cada tipo detectadas.
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="daniel_files/images/part1.png"
+                 loading="lazy" alt="Energia" width="1590" height="1192" />
+            <figcaption>
+                Relación funcional entre el tiempo de vuelo de partículas detectadas, y su energía. Nótese la existencia de un clúster, junto con ciertos eventos de detección
+                extremadamente energéticos, y otro conjunto de eventos anómalos de alto tiempo de vuelo. Nótese también que los eventos anómalos son causados en su
+                mayor parte por fotones y electrones.
+            </figcaption>
+        </figure>
 
 
 
